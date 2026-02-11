@@ -1,17 +1,17 @@
-#  WC-SPRM: Lightweight Word Cloud-Based Paraphraser
+# EEC-SRP: Lightweight Word Cloud-Based Paraphraser
 
-WC-SPRM (**Word Cloud Synonym-based Paraphrasing using Radial Mapping**) is a lightweight, interpretable paraphrasing model designed to generate semantic paraphrases efficiently by leveraging synonym embeddings within a controlled vector space. It provides a fast and compact alternative to traditional heavy-weight language models.
+EEC-SRP (**Exclusive-Embedding Cluster-Driven Synonym Replacement Paraphrasing**) is a lightweight, interpretable paraphrasing model designed to generate semantic paraphrases efficiently by leveraging synonym embeddings within a controlled vector space. It provides a fast and compact alternative to traditional heavy-weight language models.
 
 ---
 
 ##  Overview
 
-WC-SPRM builds a paraphrasing system in 4 major stages:
+EEC_SRP builds a paraphrasing system in 4 major stages:
 
 1. **Word Embedding Generation**: 
    - Uses a modified Skip-Gram model trained with MSE loss to generate custom word embeddings.
 
-2. **Word Cloud Creation**: 
+2. **Embedding Cluster Creation**: 
    - For each parent word, synonyms are retrieved and mapped within a radius of 0.2 in the embedding space using perturbation logic.
 
 3. **Model Training**: 
